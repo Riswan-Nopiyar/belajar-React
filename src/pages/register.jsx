@@ -1,12 +1,18 @@
 import AuthLayout from "../components/layout/AuthLayouts";
-import FormRegister from "../components/fragments/FormRegister"; // Pastikan impor FormRegister dari lokasi yang benar
+import FormLogin from "../components/fragments/FormLogin";
+import FormRegister from "../components/fragments/FormRegister";
+import { Link } from "react-router-dom";
 
 const RegisterPage = () => {
-  return (
+    return (
     <AuthLayout title="Register">
-      <FormRegister />
+        <FormRegister />
+        <p className="text-sm mt-5 text-center">
+            have an account?{" "}
+             <Link to="/login" className="font-bold text-blue-600">Login</Link>
+        </p>
     </AuthLayout>
-  );
+ );
 };
 
 export default RegisterPage;

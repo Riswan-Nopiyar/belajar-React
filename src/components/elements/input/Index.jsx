@@ -1,8 +1,9 @@
 import Input from "./Input";
-import Label from "./label";
+import Label from "./Label";
 
 const InputForm = (props) => {
     const {label, name, type, placeholder } = props;
+    console.log(label);
     return (
         <div className="mb-6">
             <Label htmlFor={name}>{label}</Label>
